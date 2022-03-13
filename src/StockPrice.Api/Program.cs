@@ -36,7 +36,7 @@ app.UseSwaggerUI();
 app.UseStaticFiles();
 app.UseHttpsRedirection();
 
-app.MapGet("/stock", async (string stock, IStockCallerService service) => await service.GetStock(stock));
+app.MapGet("/api/stock", async (string stock, IStockCallerService service) => await service.GetStock(stock));
 
 // app.UseAuthorization();
 
